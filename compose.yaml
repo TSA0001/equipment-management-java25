@@ -1,0 +1,17 @@
+services:
+  equipment-java25-app:
+    build:
+      context: .
+      dockerfile: Containerfile
+    container_name: equipment-java25-app
+    ports:
+      - "9083:9080"
+    volumes:
+      - equipment-java25-db:/data/h2
+    environment:
+      TZ: Asia/Tokyo
+      DB_PATH: /data/h2/equipment
+    restart: unless-stopped
+
+volumes:
+  equipment-java25-db:

@@ -17,6 +17,10 @@ Spring / JSF / JPA は使用しません。
 
 コンテナイメージには OSS の Open Liberty を使用しています。同じ Liberty 機能（`pages-3.1`）を利用するため、IBM WebSphere Application Server Liberty 上でも動作する構成です。
 
+## ライセンス
+
+このリポジトリーに含まれるアプリケーション固有のソースコードは [Apache License 2.0](LICENSE) で公開しています。H2、Jakarta API、Liberty ランタイムなどの外部コンポーネントにはそれぞれの利用条件が適用されます。詳細は [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) を参照してください。
+
 ## 前提
 
 - macOS

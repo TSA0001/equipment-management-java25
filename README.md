@@ -1,6 +1,6 @@
 # 備品管理システム
 
-Java 8 の Servlet/JSP アプリを Java 25・Jakarta EE 10・IBM WebSphere Application Server Liberty へ移行した社内備品管理 Web アプリケーションです。MCP機能は含みません。
+Java 8 の Servlet/JSP アプリを Java 25・Jakarta EE 10・IBM WebSphere Application Server Liberty / Open Liberty へ移行した社内備品管理 Web アプリケーションです。MCP機能は含みません。
 
 ## 技術構成
 
@@ -8,12 +8,14 @@ Java 8 の Servlet/JSP アプリを Java 25・Jakarta EE 10・IBM WebSphere Appl
 |------|----------|
 | Java | 25（IBM Semeru Runtime） |
 | Web | Jakarta Servlet 6.0 + Jakarta Pages 3.1 + JSTL 3.0 |
-| コンテナ | IBM WebSphere Application Server Liberty 26.0.0.9 |
+| コンテナ | IBM WebSphere Application Server Liberty / Open Liberty 26.0.0.9 |
 | ビルド | Maven 3.9.11（Java 25） |
 | 実行環境 | Podman（単一コンテナ） |
 | DB | H2（ファイル DB、Volume 永続化。旧 Tomcat 版とは別 Volume） |
 
 Spring / JSF / JPA は使用しません。
+
+コンテナイメージには OSS の Open Liberty を使用しています。同じ Liberty 機能（`pages-3.1`）を利用するため、IBM WebSphere Application Server Liberty 上でも動作する構成です。
 
 ## 前提
 

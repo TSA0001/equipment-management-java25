@@ -11,4 +11,4 @@ Browser
 JSP
 ```
 
-起動時に `AppBootstrapListener` が schema / seed を未初期化時のみ投入する。実行基盤は Java 25 の IBM WebSphere Application Server Liberty 26.0.0.9 で、`pages-3.1` を有効化する。
+起動時に `AppBootstrapListener` が schema / seed を未初期化時のみ投入する。実行基盤は Java 25 の IBM WebSphere Application Server Liberty / Open Liberty 26.0.0.9 で、`pages-3.1` を有効化する。

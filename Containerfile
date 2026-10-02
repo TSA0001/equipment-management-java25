@@ -12,7 +12,7 @@ COPY src ./src
 RUN mvn -B -DskipTests=false clean package
 
 # ---- runtime stage ----
-# Java 25 を含む IBM WebSphere Application Server Liberty 実行イメージ。
+# Java 25 を含む Open Liberty 実行イメージ。IBM WebSphere Application Server Liberty でも同じ構成で動作する。
 FROM icr.io/appcafe/open-liberty:26.0.0.9-full-java25-openj9-ubi-minimal
 
 ENV TZ=Asia/Tokyo \

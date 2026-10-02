@@ -3,7 +3,7 @@
 ## 現在の到達点
 
 - Java 8 / `javax.*` の Servlet/JSP/JDBC アプリを Java 25 / Jakarta EE 10 へ移行済み
-- 実行基盤を Apache Tomcat 9 から IBM WebSphere Application Server Liberty 26.0.0.9 へ移行済み
+- 実行基盤を Apache Tomcat 9 から IBM WebSphere Application Server Liberty / Open Liberty 26.0.0.9 へ移行済み
 - Web画面、Service、DAO、JDBC/H2 の既存機能を維持
 - MCP機能はこのリポジトリには含めない
 
